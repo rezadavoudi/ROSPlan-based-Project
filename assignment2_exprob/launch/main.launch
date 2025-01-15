@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+	
+	<include file="$(find assignment2_exprob)/launch/sim_aruco2.launch"></include>
+	
+	<param name="last_loc" value= "loc4" />
+	<param name="least_id" value= "200" />
+	<!-- Run the launch file for running the planner domain and problem -->
+    	
+    	<include file="$(find assignment2_exprob)/launch/gmapping.launch"></include>
+    	
+    	<include file="$(find assignment2_exprob)/launch/move_base.launch"></include>
+    	
+    	
+</launch>
